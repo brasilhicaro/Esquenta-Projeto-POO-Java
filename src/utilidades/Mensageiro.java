@@ -13,7 +13,7 @@ public class Mensageiro {
 		CentralDeInformacoes centralDeInformacoes = p.recuperarCentral("central");
 		Usuario u = centralDeInformacoes.getUsuariosCadastrados().get(0);
 		String remetente = "projetoseriespoo@gmail.com";
-		String senha = "nchwpdgmrfccbxki";
+		String senha = ${{ secrets.SENHA }};
 
 		MultiPartEmail email = new MultiPartEmail();
 		email.setHostName("smtp.gmail.com");
